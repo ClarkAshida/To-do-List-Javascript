@@ -2,7 +2,6 @@
   --white: #ffff;
   --font-color: black;
 }
-
 body{
   background-image: linear-gradient(90deg,#fda085,#f6d365);
 	font-family: 'Open Sans', sans-serif;
@@ -10,26 +9,22 @@ body{
 	min-height: 90vh;
   box-sizing: border-box;
 }
-
 header{
     color: var(--white);
     font-size: 1.5rem;
 }
-
 main, header{
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 10vh;
 }
-
 .todo-inputs, .task-container{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 1.5rem auto;
 }
-
 #task{
     font-size: 1.5rem;
     width: 500px;
@@ -38,7 +33,6 @@ main, header{
     border: none;
     margin-right: 5px;
 }
-  
 #send{
     height: 47px;
     width: 50px;
@@ -48,16 +42,13 @@ main, header{
     background-color: var(--white);
     border: none;
 }
-
 #send i{
   font-size: 30px;
 }
-
 #send:hover{
   background: #fda085;
 	color: var(--white)
 }
-
 .task-container{
   list-style: none;
   font-size: 1.4rem;
@@ -69,7 +60,6 @@ main, header{
   width: 600px;
   max-height: 80px;
 }
-
 .task-container li{
   flex: 1;
   padding: 0rem 1rem;
@@ -79,11 +69,9 @@ main, header{
   align-items: center;
   height: 60px;
 }
-
 #checkbox{
   transform: scale(2);
-}
-  
+} 
 .btnDelete{
   background-color: #fd0019;
   font-size: 1.5rem;
@@ -94,52 +82,26 @@ main, header{
   min-width: 60px;
   cursor: pointer;
 }
-
 #checkbox:checked + li{
   color: #6c6c6c;
   text-decoration: line-through;
 }
-
 #btndelete{
   display: none;
 }
-
-@media (max-width: 700px){
+@media screen and (min-width:500px) and (max-width: 700px){
   header{
     font-size: 1rem;
   }
   .task-container, .todo-inputs, #task{
-    width: 500px;
+    width: 400px;
     font-size: 1.1rem;
   }
-}
-@media (max-width: 600px){
-  .task-container{
-    width: 400px;
-    font-size: 1.2rem;
-  }
   #task{
-    width: 400px;
+    width: 200px;
   }
 }
-@media (max-width: 500px){
-  .task-container{
-    width: 300px;
-    height: 80px;
-    font-size: 1.2rem;
-  }
-  #task{
-    width: 300px;
-  }
-  .btnDelete{
-    height: 80px;
-    font-size: 30px;
-  }
-  .task-container li{
-    height: 80px;
-  }
-}
-@media (max-width: 400px){
+@media screen and (min-width:100px) and (max-width: 500px){
   .task-container{
     width: 300px;
     height: 80px;
